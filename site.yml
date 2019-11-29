@@ -1,0 +1,9 @@
+--- 
+- name: install apache, php, mysql server, wordpress 
+  hosts: tag_class_wordpress 
+  become: yes 
+ 
+  roles: 
+    - web 
+    - mysql 
+    - wordpress
