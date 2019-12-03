@@ -1,9 +1,9 @@
 --- 
 - name: install apache, php, mysql server, wordpress 
-  hosts: tag_class_wordpress 
+  hosts: hosts
   become: yes 
  
   roles: 
     - web 
-    - mysql 
+    - geerlingguy.mysql
     - wordpress

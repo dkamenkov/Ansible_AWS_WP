@@ -1,5 +1,25 @@
-Ansible Playbook, который устанавливает Wordpress.
-Хост Ubuntu, клиент Centos/7.
+# Описание
+
+Ansible Playbook, который устанавливает WordPress на сервер с CentOS 7.
+
+# Быстрый старт
+
+* В файле hosts исправить имя пользователя и IP-адрес сервера на необходимые
+* Склонировать репозиторий
+```
+git clone git@github.com:DEMEHTOP/Ansible_AWS_WP.git
+```
+* Установить дополнительные роли из Ansible Galaxy
+```
+cd Ansible_AWS_WP
+ansible-galaxy install -c -r requirements.yml
+```
+* Запустить плейбук, который установит WordPress и все необходимое для его работы
+```
+ansible-playbook site.yml
+```
+
+---
 
 Проект задумывался реализоваться в AWS, но к сожаленю не хватило времени и знаний, что бы это свершилось. На данном этапе были успешно проведены тесты только на vagrant.
 
