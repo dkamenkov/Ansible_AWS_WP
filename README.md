@@ -31,4 +31,5 @@ ansible-playbook site.yml
 
 Задание определенно интересное, со своими тонкостями, в процессе я многое узнал и глубоко окунулся в основы devops'a, но также обнаружил и пробелы в знаниях и нехватку практики. Независимо от результата проверки, буду его дорабатывать. 
 
-
+---
+При запуске основного плейбука со временем выдаёт ошибку "failed: [18.185.35.139] (item=php-mysql) => {"ansible_loop_var": "item", "changed": false, "failures": ["No package php-mysql available."], "item": "php-mysql", "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}". В процессе фикса
