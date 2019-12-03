@@ -1,7 +1,7 @@
 ---  
 - name: install apache, php, and php-mysql  
   yum: name={{ item }} state=present 
-  with_items: 
+  loop: 
    - httpd 
    - php 
    - php-mysql 

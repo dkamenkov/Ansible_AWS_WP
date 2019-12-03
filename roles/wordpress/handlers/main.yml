@@ -1,0 +1,5 @@
+---
+- name: cleanup /opt/wordpress
+  file:
+    path: /opt/wordpress
+    state: absent
