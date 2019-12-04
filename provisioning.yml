@@ -4,15 +4,15 @@
   gather_facts: no
   vars: 
     #your region 
-    region: eu-central-1b
-    keyname: MyKeyPair 
+    region: us-east-1a
+    keyname: MyKey
     #your ip address 
     allowed_ip: 85.143.228.149/32 
     instance_type: t2.micro 
-    image: ami-0badcc5b522737046 
+    image: ami-02eac2c0129f6376b
   tasks: 
   - name: create key pair 
-    tags: MyKeyPair 
+    tags: MyKey 
     ec2_key: 
       region: "{{ region }}" 
       name: "{{ keyname }}" 
@@ -28,8 +28,8 @@
     ec2_group:
       region: "{{ region }}"
       #your security group name
-      name: launch-wizard-2 
-      description: security group for apseurope webserver host
+      name: new 
+      description: new
       rules:   
         # allow ssh access from your ip address   
         - proto: tcp 
